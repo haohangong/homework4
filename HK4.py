@@ -63,10 +63,10 @@ item = column_entropy.items();
 item = [[i[1],i[0]] for i in item];
 item.sort()
 for i in range(0,10):
-    print(item[1])
+    print(item[i][1])
     
 item = colpair_mi.items()
 item = [[i[1],i[0]] for i in item];
 item.sort(reversed = True)
 for i in range(0,50):
-    print(item[1])
+    print(item[i][1])

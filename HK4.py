@@ -57,3 +57,16 @@ for i in range(0,seq_len):
                                                 /(column_dist[i][nul1]\
                                                   *column_dist[j][nul2]))
         colpair_mi[(i,j)] = round(mi,6)
+
+#TASK5
+item = column_entropy.items();
+item = [[i[1],i[0]] for i in item];
+item.sort()
+for i in range(0,10):
+    print(item[1])
+    
+item = colpair_mi.items()
+item = [[i[1],i[0]] for i in item];
+item.sort(reversed = True)
+for i in range(0,50):
+    print(item[1])
